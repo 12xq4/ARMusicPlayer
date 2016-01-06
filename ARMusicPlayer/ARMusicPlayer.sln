@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{FA737E86-63CA-F087-C891-B78E2ED809F0}") = "ARMusicPlayer", "Assembly-CSharp.csproj", "{1A858D2A-1A8E-39C8-91E2-3FF452EC0EFD}"
+EndProject
+Project("{FA737E86-63CA-F087-C891-B78E2ED809F0}") = "ARMusicPlayer", "Assembly-CSharp-Editor.csproj", "{948A2765-C09D-7553-5447-6C5FADB89EBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A858D2A-1A8E-39C8-91E2-3FF452EC0EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A858D2A-1A8E-39C8-91E2-3FF452EC0EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A858D2A-1A8E-39C8-91E2-3FF452EC0EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A858D2A-1A8E-39C8-91E2-3FF452EC0EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{948A2765-C09D-7553-5447-6C5FADB89EBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{948A2765-C09D-7553-5447-6C5FADB89EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{948A2765-C09D-7553-5447-6C5FADB89EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{948A2765-C09D-7553-5447-6C5FADB89EBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
