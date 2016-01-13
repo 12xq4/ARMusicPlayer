@@ -11,6 +11,7 @@ namespace Vuforia
     /// <summary>
     /// A custom handler that implements the ITrackableEventHandler interface.
     /// </summary>
+
     public class DefaultTrackableEventHandler : MonoBehaviour,
                                                 ITrackableEventHandler
     {
@@ -19,7 +20,6 @@ namespace Vuforia
         private TrackableBehaviour mTrackableBehaviour;
     
         #endregion // PRIVATE_MEMBER_VARIABLES
-
 
 
         #region UNTIY_MONOBEHAVIOUR_METHODS
@@ -31,11 +31,10 @@ namespace Vuforia
             {
                 mTrackableBehaviour.RegisterTrackableEventHandler(this);
             }
-        }
 
         #endregion // UNTIY_MONOBEHAVIOUR_METHODS
 
-
+		}
 
         #region PUBLIC_METHODS
 
@@ -91,6 +90,11 @@ namespace Vuforia
 			}
 
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
+
+			// enable particle in the scene from playing.
+			GameObject m_particle = GameObject.FindGameObjectWithTag("Particle");
+			m_particle.GetComponent<ParticleSystem> ().Play();
+			// m_particle.gameObject.SetActive(true);
         }
 
 
@@ -112,6 +116,11 @@ namespace Vuforia
             }
 
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
+
+			// disable particle in the scene from playing.
+			GameObject m_particle = GameObject.FindGameObjectWithTag("Particle");
+			m_particle.GetComponent<ParticleSystem> ().Stop();
+			// m_particle.gameObject.SetActive(false);
         }
 
         #endregion // PRIVATE_METHODS
