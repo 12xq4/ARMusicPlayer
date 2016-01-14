@@ -5,3 +5,11 @@ Initial Upload:
 - It has been integrated with Vuforia.
 - It has component from a spectrum visualizer.
 - Goal for next step: build a interface.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Second Update 1/13/2016:
+- added simple UI to change spectrum visualizer's color
+- added simple particle
+- fixed spectrum bar so they are aligned with the ground
+- changed spectrum movement to lerp, smooth out the animation.
